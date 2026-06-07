@@ -72,7 +72,7 @@
         # The project itself is a script, not an installable package, so we
         # enumerate the direct deps from pyproject.toml explicitly.
         virtualenv = pythonSet.mkVirtualEnv "srt-llm-processor-env" {
-          httpx = [ ];
+          httpx = [ "socks" ];
           openai = [ ];
           rich = [ ];
           srt = [ ];
